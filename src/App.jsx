@@ -1,16 +1,17 @@
 import logo from './assets/react.svg';
 import { useState } from 'react'
 import './App.css';
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(15);
-  const minCount = 1;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} style={{ '--logo-speed': count + 's' }} className="App-logo" alt="logo" />
-      </header>
-    </div>
+    <>
+      <Header />
+      <main className="App">
+      </main>
+      <Footer />
+    </>
   );
 }
 
